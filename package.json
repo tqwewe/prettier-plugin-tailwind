@@ -1,11 +1,17 @@
 {
 	"name": "prettier-plugin-tailwind-classes-sorter",
-	"version": "1.0.5",
+	"version": "1.0.8",
 	"description": "Sort tailwind classes",
 	"main": "prettier-plugin-tailwind-classes-sorter.js",
 	"author": "Acidic9",
 	"license": "MIT",
 	"private": false,
+	"keywords": [
+		"prettier",
+		"plugin",
+		"tailwind",
+		"sort"
+	],
 	"dependencies": {
 		"prettier": "^1.19.1",
 		"tailwind-classes-sorter": "^0.1.9",
