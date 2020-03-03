@@ -39,8 +39,8 @@ const code = `
 </html>
 `
 const output = prettier.format(code, {
-	parser: 'tailwind-classes-sorter-html',
-	pluginSearchDirs: ['./'],
-	plugins: ['./prettier-plugin-tailwind-classes-sorter'],
+  parser: 'tailwind-html',
+  pluginSearchDirs: ['./'],
+  plugins: ['./prettier-plugin-tailwind'],
 })
 console.log(output)

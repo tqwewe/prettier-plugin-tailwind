@@ -1,6 +1,6 @@
-# Prettier Plugin Tailwind Classes Sorter
+# Prettier Plugin Tailwind
 
-Sort tailwind classes in HTML with Prettier.
+Sort tailwind classes with Prettier.
 
 **Go from this:**
 
@@ -31,7 +31,7 @@ yarn add --dev prettier
 Install this plugin:
 
 ```bash
-yarn add --dev prettier-plugin-tailwind-classes-sorter
+yarn add --dev prettier-plugin-tailwind
 ```
 
 ## Roadmap
