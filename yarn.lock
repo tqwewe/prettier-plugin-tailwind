@@ -166,6 +166,11 @@ jsonfile@^4.0.0:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
+linguist-languages@^7.8.0:
+  version "7.8.0"
+  resolved "https://registry.yarnpkg.com/linguist-languages/-/linguist-languages-7.8.0.tgz#9647c6a5e96c5abbd621eeac811607eb70cd15e3"
+  integrity sha512-fV9VJbQdIBv9FvAe7wIyTWGNy468yvHhXqzGJylKhCX4EUX8Xk2tjs3XgblGLLTl+OGmEfY1M8klvWRG4FdHgQ==
+
 lodash.toarray@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/lodash.toarray/-/lodash.toarray-4.4.0.tgz#24c4bfcd6b2fba38bfd0594db1179d8e9b656561"
@@ -292,15 +297,6 @@ postcss@^7.0.11, postcss@^7.0.18, postcss@^7.0.21, postcss@^7.0.23:
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
-prettier-plugin-tailwind-classes-sorter@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-tailwind-classes-sorter/-/prettier-plugin-tailwind-classes-sorter-1.0.4.tgz#47198ba0fd564bac367c0d3fb5e550cf6e5fc811"
-  integrity sha512-noToMulX1smhWrBjt81aTUrGVkfEkDwILVxRalMmrrqYge6kcFWruF5telFHjohhNVCdz/L8v/A6cV9gqIbR+w==
-  dependencies:
-    prettier "^1.19.1"
-    tailwind-classes-sorter "^0.1.7"
-    tailwindcss "^1.1.4"
-
 prettier@^1.19.1:
   version "1.19.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
@@ -343,10 +339,10 @@ supports-color@^6.1.0:
   dependencies:
     has-flag "^3.0.0"
 
-tailwind-classes-sorter@^0.1.7, tailwind-classes-sorter@^0.1.8:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/tailwind-classes-sorter/-/tailwind-classes-sorter-0.1.8.tgz#ec94b02dac75a3211ba396be29d819378750dfe5"
-  integrity sha512-+9wSnzPpKpDqj23Z+cXZEHmWSaWTUpDqSbup78cfH0nueHnBHEDWwG5ZmbZ119XsOHFJbTKPYLXSuFsZvZnU4g==
+tailwind-classes-sorter@^0.1.9:
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/tailwind-classes-sorter/-/tailwind-classes-sorter-0.1.9.tgz#19a240fe068cd8ded2360defd8e3f158194e7c63"
+  integrity sha512-Ul7mZ8G4N8Ch7nPJilac5Xl4foCwdhTNCi9go53gGp6PiaIkYKuNUPkAYSzejbJjUA+zPDDkV8zwN4mtIz9eDg==
 
 tailwindcss@^1.1.4:
   version "1.1.4"
