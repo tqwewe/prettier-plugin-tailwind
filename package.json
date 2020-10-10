@@ -2,19 +2,25 @@
 	"name": "prettier-plugin-tailwind",
 	"version": "2.0.0",
 	"description": "Sort tailwind classes",
-	"main": "prettier-plugin-tailwind.js",
-	"author": "Acidic9",
-	"license": "MIT",
-	"private": false,
+	"author": "Ari Seyhun <ariseyhun@live.com.au>",
+	"homepage": "https://github.com/Acidic9/tailwind-classes-sorter#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Acidic9/tailwind-classes-sorter.git"
+	},
 	"keywords": [
 		"prettier",
 		"plugin",
-		"tailwind",
-		"sort"
+		"tailwindcss",
+		"sort",
+		"order"
 	],
+	"main": "prettier-plugin-tailwind.js",
+	"license": "MIT",
+	"private": false,
 	"dependencies": {
-		"prettier": "^1.19.1",
-		"tailwind-classes-sorter": "^0.1.9",
-		"tailwindcss": "^1.1.4"
+		"prettier": "^2.1.2",
+		"tailwind-classes-sorter": "^0.1.14",
+		"tailwindcss": "^1.8.13"
 	}
 }

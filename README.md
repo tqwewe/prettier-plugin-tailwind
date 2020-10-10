@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/prettier-plugin-tailwind.svg)](https://badge.fury.io/js/prettier-plugin-tailwind)
+
 # Prettier Plugin Tailwind
 
 Sort tailwind classes with Prettier.
@@ -6,7 +8,7 @@ Sort tailwind classes with Prettier.
 
 ```html
 <div class="z-50 z-10 container  text-left md:text-center justify-center">
-  ...
+	...
 </div>
 ```
 
@@ -14,7 +16,7 @@ Sort tailwind classes with Prettier.
 
 ```html
 <div class="container justify-center text-left z-10 z-50 md:text-center">
-  ...
+	...
 </div>
 ```
 
