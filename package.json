@@ -20,7 +20,7 @@
 	"private": false,
 	"dependencies": {
 		"prettier": "^2.1.2",
-		"tailwind-classes-sorter": "^0.1.14",
+		"tailwind-classes-sorter": "^0.1.15",
 		"tailwindcss": "^1.8.13"
 	}
 }
