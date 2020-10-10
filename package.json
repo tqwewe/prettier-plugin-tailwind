@@ -3,10 +3,10 @@
 	"version": "2.0.1",
 	"description": "Sort tailwind classes",
 	"author": "Ari Seyhun <ariseyhun@live.com.au>",
-	"homepage": "https://github.com/Acidic9/tailwind-classes-sorter#readme",
+	"homepage": "https://github.com/Acidic9/prettier-plugin-tailwind#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Acidic9/tailwind-classes-sorter.git"
+		"url": "git+https://github.com/Acidic9/prettier-plugin-tailwind.git"
 	},
 	"keywords": [
 		"prettier",
