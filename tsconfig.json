@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"strict": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"declaration": true,
+		"module": "commonjs",
+		"outDir": "lib",
+		"moduleResolution": "node",
+		"noImplicitAny": false
+	},
+	"lib": ["es2015"],
+	"include": ["src"]
+}
