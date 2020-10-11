@@ -95,8 +95,8 @@ This plugin also supports [`twin.marco`](https://github.com/ben-rogerson/twin.ma
 
 ## Roadmap
 
-- [✓] Add support for configuring plugin order
-- [ ] Add support for JSX, TSX, Vue
+- [x] Add support for configuring plugin order
+- [x] Add support for JSX, TSX
 
 ## Contributing
 
