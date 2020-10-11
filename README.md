@@ -88,7 +88,7 @@ _Default: `"start"`_
 Comma separated list of JSX attributes to sort tailwind classes in.
 
 ```ts
-twJsxClassAttributes:
+twJsxClassAttributes: string
 ```
 
 _Default: `"className,tw"`_
