@@ -24,21 +24,52 @@ This plugin reads your `tailwind.config.js` file to support new keys and classes
 
 ## Installation VSCode:
 
-Install Prettier into your project locally:
+Install Prettier and the plugin into your project locally:
 
 ```bash
-yarn add --dev prettier
+yarn add --dev prettier prettier-plugin-tailwind
 ```
 
-Install this plugin:
+_\*supports other IDE's\*_
 
-```bash
-yarn add --dev prettier-plugin-tailwind
+## Options
+
+These options can be added to your `.prettierrc` file.
+
+**twPluginsOrder**
+
+Comma separated order of tailwind plugins to sort classes by.
+`""` will use the default order.
+
+```ts
+twPluginsOrder: string
 ```
+
+_Default: `""`_
+
+_Example: `"container,position,inset"`_
+
+**twClassesPosition**
+
+Position of component and utility classes. `"as-is"` will allow component classes to be placed between utility classes.
+
+```ts
+twClassesPosition: 'components-first' | 'components-last' | 'as-is'
+```
+
+_Default: `components-first`_
+
+**twUnknownClassesPosition**
+
+```ts
+twUnknownClassesPosition: 'start' | 'end'
+```
+
+_Default: `start`_
 
 ## Roadmap
 
-- [ ] Add support for configuring plugin order
+- [✓] Add support for configuring plugin order
 - [ ] Add support for JSX, TSX, Vue
 
 ## Contributing
