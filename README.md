@@ -36,6 +36,8 @@ _\*supports other IDE's\*_
 
 These options can be added to your `.prettierrc` file.
 
+---
+
 **twPluginsOrder**
 
 Comma separated order of tailwind plugins to sort classes by.
@@ -49,6 +51,8 @@ _Default: `""`_
 
 _Example: `"container,position,inset"`_
 
+---
+
 **twClassesPosition**
 
 Position of component and utility classes. `"as-is"` will allow component classes to be placed between utility classes.
@@ -57,15 +61,37 @@ Position of component and utility classes. `"as-is"` will allow component classe
 twClassesPosition: 'components-first' | 'components-last' | 'as-is'
 ```
 
-_Default: `components-first`_
+_Default: `"components-first"`_
+
+---
 
 **twUnknownClassesPosition**
+
+Position of unknown classes.
 
 ```ts
 twUnknownClassesPosition: 'start' | 'end'
 ```
 
-_Default: `start`_
+_Default: `"start"`_
+
+---
+
+**twJsxClassAttributes**
+
+Comma separated list of JSX attributes to sort tailwind classes in.
+
+```ts
+twJsxClassAttributes:
+```
+
+_Default: `"className,tw"`_
+
+---
+
+## Bonus
+
+This plugin also supports [`twin.marco`](https://github.com/ben-rogerson/twin.macro).
 
 ## Roadmap
 
@@ -77,3 +103,7 @@ _Default: `start`_
 **Testing**
 
 Rename `test-tailwind.config.js` to `tailwind.config.js` and run `node ./test.js`.
+
+---
+
+<a href="https://www.buymeacoffee.com/ariseyhun" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
