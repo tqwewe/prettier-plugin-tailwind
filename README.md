@@ -4,6 +4,12 @@
 
 Sort tailwind classes with Prettier.
 
+Supports
+
+- HTML
+- JSX, TSX
+- [twin.marco](https://github.com/ben-rogerson/twin.macro)
+
 **Go from this:**
 
 ```html
@@ -86,12 +92,6 @@ twJsxClassAttributes:
 ```
 
 _Default: `"className,tw"`_
-
----
-
-## Bonus
-
-This plugin also supports [`twin.marco`](https://github.com/ben-rogerson/twin.macro).
 
 ## Roadmap
 
