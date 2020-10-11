@@ -140,7 +140,7 @@ export default (twClassesSorter: TWClassesSorter) => ({
 
 						const finalStr = `${normalClasses} ${groups
 							.map(({ name, content }) => `${name}:(${content})`)
-							.join(' ')}`
+							.join(' ')}`.trim()
 
 						q.value.raw = finalStr
 						if (q.value.cooked) {
