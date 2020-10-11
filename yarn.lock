@@ -567,10 +567,10 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-tailwind-classes-sorter@^0.1.14:
-  version "0.1.14"
-  resolved "https://registry.yarnpkg.com/tailwind-classes-sorter/-/tailwind-classes-sorter-0.1.14.tgz#e30bb5d30cf952a0d863fbdbf6f4a33b145bf511"
-  integrity sha512-WGJtzBKRhhPVrYIVKoHHN94NxoRpwfcxSk08dyh/MgHQBz+47nZ4p2I32FoI8Wh8/8/tE73heQV5pvPWQ/zWAQ==
+tailwind-classes-sorter@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/tailwind-classes-sorter/-/tailwind-classes-sorter-0.2.0.tgz#6806353d29987e8a571a3698559cc8dcad11c584"
+  integrity sha512-MBkQOcKemBMM9NAnEWoNOkzsW2X+NBLOAY0RZOi8i4ndw2frLrEgDv5qvz6CDwUjcMkwZuWmooRqGgywR27w3w==
   dependencies:
     find-up "^5.0.0"
 
