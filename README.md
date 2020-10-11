@@ -47,7 +47,7 @@ These options can be added to your `.prettierrc` file.
 **twPluginsOrder**
 
 Comma separated order of tailwind plugins to sort classes by.
-`""` will use the default order.
+`""` will use the plugins in alphabetical order.
 
 ```ts
 twPluginsOrder: string
@@ -92,6 +92,14 @@ twJsxClassAttributes: string
 ```
 
 _Default: `"className,tw"`_
+
+## Recommended plugins order
+
+Place this in your .prettierrc file:
+
+```yaml
+twPluginsOrder: 'container,position,zIndex,inset,display,flex,flexDirection,flexGrow,flexShrink,flexWrap,gap,gridAutoFlow,gridColumn,gridColumnEnd,gridColumnStart,gridRow,gridRowEnd,gridRowStart,gridTemplateColumns,gridTemplateRows,alignContent,alignItems,alignSelf,justifyContent,justifyItems,justifySelf,verticalAlign,placeContent,placeItems,placeSelf,float,clear,order,tableLayout,margin,padding,width,minWidth,maxWidth,height,maxHeight,minHeight,textAlign,textColor,textDecoration,textOpacity,wordBreak,whitespace,fontFamily,fontSize,fontSmoothing,fontStyle,fontVariantNumeric,fontWeight,letterSpacing,lineHeight,backgroundColor,backgroundImage,backgroundSize,backgroundPosition,backgroundRepeat,backgroundAttachment,backgroundClip,backgroundOpacity,borderWidth,borderStyle,borderColor,borderOpacity,borderRadius,borderCollapse,placeholderColor,placeholderOpacity,outline,fill,stroke,strokeWidth,boxShadow,gradientColorStops,opacity,visibility,accessibility,appearance,boxSizing,cursor,pointerEvents,userSelect,divideColor,divideOpacity,divideStyle,divideWidth,listStylePosition,listStyleType,objectFit,objectPosition,overflow,overscrollBehavior,transform,transformOrigin,translate,textTransform,resize,rotate,scale,skew,space,animation,transitionDelay,transitionDuration,transitionProperty,transitionTimingFunction,preflight'
+```
 
 ## Roadmap
 
