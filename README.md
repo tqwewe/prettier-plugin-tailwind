@@ -1,5 +1,7 @@
 [![npm version](https://badge.fury.io/js/prettier-plugin-tailwind.svg)](https://badge.fury.io/js/prettier-plugin-tailwind)
 
+<a href="https://www.buymeacoffee.com/ariseyhun" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
 # Prettier Plugin Tailwind
 
 Sort tailwind classes with Prettier.
@@ -41,8 +43,6 @@ _\*supports other IDE's\*_
 ## Options
 
 These options can be added to your `.prettierrc` file.
-
----
 
 **twPluginsOrder**
 
@@ -103,7 +103,3 @@ _Default: `"className,tw"`_
 **Testing**
 
 Rename `test-tailwind.config.js` to `tailwind.config.js` and run `node ./test.js`.
-
----
-
-<a href="https://www.buymeacoffee.com/ariseyhun" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
