@@ -1,30 +1,12 @@
 import TWClassesSorter from 'tailwind-classes-sorter'
 import prettierParserTypescript from 'prettier/parser-typescript'
 import loopNodes from '../utils/loop-nodes'
+import groupNamesSorter from '../utils/group-names-sorter'
+import { group } from 'console'
 
-const TW_MARCO_EXP = /(([A-z\-]+):\(([^\)]*)\))/g
-const TW_MARCO_GROUP_ORDER = [
-	'sm',
-	'md',
-	'lg',
-	'xl',
-	'hover',
-	'focus',
-	'active',
-	'group-hover',
-	'group-focus',
-	'focus-within',
-	'focus-visible',
-	'motion-safe',
-	'motion-reduce',
-	'disabled',
-	'visited',
-	'checked',
-	'first',
-	'last',
-	'odd',
-	'even',
-]
+const TW_MARCO_EXP = /(?:[A-z\-]+:)*\([^\)]*\)/g
+const TW_MARCO_GROUP_NAMES_EXP = /([A-z\-]+:)/g
+const TW_MARCO_GROUP_CONTENT_EXP = /[A-z\-]+:\(([^\)]*)\)/
 
 export default (twClassesSorter: TWClassesSorter) => ({
 	...prettierParserTypescript.parsers.typescript,
@@ -84,15 +66,24 @@ export default (twClassesSorter: TWClassesSorter) => ({
 						const rawValue = q.value.raw
 
 						const groups: {
-							name: string
+							names: string[]
 							content: string
 						}[] = []
 						const normalClasses = twClassesSorter
 							.sortClasslist(
-								rawValue.replace(TW_MARCO_EXP, (_1, _2, groupName, classes) => {
+								rawValue.replace(TW_MARCO_EXP, str => {
+									const groupNames = str
+										.match(TW_MARCO_GROUP_NAMES_EXP)
+										.map(groupName => groupName.substr(0, groupName.length - 1))
+										.sort(groupNamesSorter())
+
+									const content = twClassesSorter
+										.sortClasslist(str.match(TW_MARCO_GROUP_CONTENT_EXP)[1])
+										.join(' ')
+
 									groups.push({
-										name: groupName,
-										content: twClassesSorter.sortClasslist(classes).join(' '),
+										names: groupNames,
+										content,
 									})
 									return ''
 								})
@@ -100,46 +91,12 @@ export default (twClassesSorter: TWClassesSorter) => ({
 							.join(' ')
 
 						// Sort groups
-						groups.sort((a, b) => {
-							const aSortIndex = TW_MARCO_GROUP_ORDER.findIndex(
-								name => name === a.name
-							)
-							const bSortIndex = TW_MARCO_GROUP_ORDER.findIndex(
-								name => name === b.name
-							)
-
-							if (aSortIndex !== -1 && bSortIndex === -1) {
-								// a found, b not found
-								return 1
-							}
-							if (aSortIndex === -1 && bSortIndex !== -1) {
-								// b found, a not found
-								return -1
-							}
-
-							if (aSortIndex !== -1 && bSortIndex !== -1) {
-								if (aSortIndex < bSortIndex) {
-									return -1
-								}
-								if (aSortIndex > bSortIndex) {
-									return 1
-								}
-
-								return 0
-							}
-
-							if (a.name < b.name) {
-								return -1
-							}
-							if (a.name > b.name) {
-								return 1
-							}
-
-							return 0
-						})
+						groups.sort(
+							groupNamesSorter<{ names: string[] }>(val => val.names[0])
+						)
 
 						const finalStr = `${normalClasses} ${groups
-							.map(({ name, content }) => `${name}:(${content})`)
+							.map(({ names, content }) => `${names.join(':')}:(${content})`)
 							.join(' ')}`.trim()
 
 						q.value.raw = finalStr
