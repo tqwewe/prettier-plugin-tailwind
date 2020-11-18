@@ -1,24 +1,17 @@
 import type TWClassesSorter from 'tailwind-classes-sorter'
 import prettierParserHTML from 'prettier/parser-html'
+import updateOptions from '../utils/update-options'
 
 export default (twClassesSorter: TWClassesSorter) => ({
 	...prettierParserHTML.parsers.html,
-	parse: (text, parsers, options) => {
-		const result = prettierParserHTML.parsers.html.parse(text, parsers, options)
+	parse(text, parsers, options) {
+		const ast = prettierParserHTML.parsers.html.parse(text, parsers, options)
+
 		if (!twClassesSorter) {
-			return result
+			return ast
 		}
-		twClassesSorter.classesPosition =
-			options.twClassesPosition || 'components-first'
-		twClassesSorter.unknownClassesPosition =
-			options.twUnknownClassesPosition || 'start'
-		twClassesSorter.setPluginOrder(defaultOrder => {
-			const customOrder = options.twPluginsOrder.split(',')
-			return [
-				...customOrder,
-				...defaultOrder.filter(plugin => !customOrder.includes(plugin)),
-			]
-		})
+
+		updateOptions(twClassesSorter, options)
 
 		const cleanElementClasses = el => {
 			if (el.attrs) {
@@ -36,8 +29,8 @@ export default (twClassesSorter: TWClassesSorter) => ({
 				el.children.forEach(childEl => cleanElementClasses(childEl))
 			}
 		}
-		cleanElementClasses(result)
+		cleanElementClasses(ast)
 
-		return result
+		return ast
 	},
 })

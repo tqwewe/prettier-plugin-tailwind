@@ -1,28 +1,23 @@
 import type TWClassesSorter from 'tailwind-classes-sorter'
 import prettierParserBabel from 'prettier/parser-babel'
 import loopNodes from '../utils/loop-nodes'
+import updateOptions from '../utils/update-options'
 
 export default (twClassesSorter: TWClassesSorter) => ({
 	...prettierParserBabel.parsers.babel,
-	parse: (text, parsers, options) => {
+	parse(text, parsers, options) {
 		const ast = prettierParserBabel.parsers.babel.parse(text, parsers, options)
 
 		if (!twClassesSorter) {
 			return ast
 		}
-		twClassesSorter.classesPosition =
-			options.twClassesPosition || 'components-first'
-		twClassesSorter.unknownClassesPosition =
-			options.twUnknownClassesPosition || 'start'
-		twClassesSorter.setPluginOrder(defaultOrder => {
-			const customOrder = options.twPluginsOrder.split(',')
-			return [
-				...customOrder,
-				...defaultOrder.filter(plugin => !customOrder.includes(plugin)),
-			]
-		})
 
-		const attributeNames: string[] = options.twJsxClassAttributes.split(',')
+		updateOptions(twClassesSorter, options)
+
+		const attributeNames: string[] =
+			typeof options !== 'undefined'
+				? options.twJsxClassAttributes.split(',')
+				: ['className', 'tw']
 
 		const result = loopNodes(ast, node => {
 			if (
@@ -37,6 +32,7 @@ export default (twClassesSorter: TWClassesSorter) => ({
 				const newValue = twClassesSorter
 					.sortClasslist(node.value.value)
 					.join(' ')
+
 				node.value.value = newValue
 				node.value.extra = {
 					...(node.value.extra || {}),

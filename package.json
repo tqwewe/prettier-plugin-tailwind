@@ -1,6 +1,6 @@
 {
 	"name": "prettier-plugin-tailwind",
-	"version": "2.1.9",
+	"version": "2.2.0",
 	"description": "Sort tailwind classes",
 	"author": "Ari Seyhun <ariseyhun@live.com.au>",
 	"homepage": "https://github.com/Acidic9/prettier-plugin-tailwind#readme",
@@ -23,12 +23,13 @@
 	},
 	"dependencies": {
 		"prettier": "^2.1.2",
+		"svelte-prettier-plugin": "npm:prettier-plugin-svelte",
 		"tailwind-classes-sorter": "^0.2.2",
 		"tailwindcss": "^1.8.13"
 	},
 	"devDependencies": {
-		"@types/node": "^14.11.8",
+		"@types/node": "^14.14.8",
 		"rimraf": "^3.0.2",
-		"typescript": "^4.0.3"
+		"typescript": "^4.0.5"
 	}
 }

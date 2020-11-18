@@ -1,6 +1,8 @@
 import TWClassesSorter from 'tailwind-classes-sorter'
 import path from 'path'
+import languages from './languages'
 import parsers from './parsers'
+import printers from './printers'
 import options from './options'
 
 let twClassesSorter
@@ -13,6 +15,8 @@ try {
 }
 
 module.exports = {
+	languages: languages.svelte,
 	parsers: parsers(twClassesSorter),
+	printers: printers.svelte,
 	options,
 }

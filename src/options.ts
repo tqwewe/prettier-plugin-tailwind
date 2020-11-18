@@ -1,4 +1,7 @@
+import { options as svelteOptions } from 'svelte-prettier-plugin'
+
 export default {
+	...svelteOptions,
 	twPluginsOrder: {
 		type: 'string',
 		category: 'Global',

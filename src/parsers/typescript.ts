@@ -2,7 +2,7 @@ import TWClassesSorter from 'tailwind-classes-sorter'
 import prettierParserTypescript from 'prettier/parser-typescript'
 import loopNodes from '../utils/loop-nodes'
 import groupNamesSorter from '../utils/group-names-sorter'
-import { group } from 'console'
+import updateOptions from '../utils/update-options'
 
 const TW_MARCO_EXP = /(?:[A-z\-]+:)*\([^\)]*\)/g
 const TW_MARCO_GROUP_NAMES_EXP = /([A-z\-]+:)/g
@@ -10,7 +10,7 @@ const TW_MARCO_GROUP_CONTENT_EXP = /[A-z\-]+:\(([^\)]*)\)/
 
 export default (twClassesSorter: TWClassesSorter) => ({
 	...prettierParserTypescript.parsers.typescript,
-	parse: (text, parsers, options) => {
+	parse(text, parsers, options) {
 		const ast = prettierParserTypescript.parsers.typescript.parse(
 			text,
 			parsers,
@@ -20,17 +20,8 @@ export default (twClassesSorter: TWClassesSorter) => ({
 		if (!twClassesSorter) {
 			return ast
 		}
-		twClassesSorter.classesPosition =
-			options.twClassesPosition || 'components-first'
-		twClassesSorter.unknownClassesPosition =
-			options.twUnknownClassesPosition || 'start'
-		twClassesSorter.setPluginOrder(defaultOrder => {
-			const customOrder = options.twPluginsOrder.split(',')
-			return [
-				...customOrder,
-				...defaultOrder.filter(plugin => !customOrder.includes(plugin)),
-			]
-		})
+
+		updateOptions(twClassesSorter, options)
 
 		const attributeNames: string[] = options.twJsxClassAttributes.split(',')
 

@@ -9,8 +9,10 @@ Sort tailwind classes with Prettier.
 Supports
 
 - HTML
+- CSS (@apply directive)
 - JSX, TSX
 - [twin.marco](https://github.com/ben-rogerson/twin.macro)
+- Svelte
 
 **Go from this:**
 
@@ -93,6 +95,14 @@ twJsxClassAttributes: string
 
 _Default: `"className,tw"`_
 
+## Svelte Setup
+
+To use this plugin with Svelte, you should **not** use the prettier-plugin-svelte plugin as it is imported by this plugin already.
+
+Credit goes to the svelte prettier plugin for helping with support for Svelte.
+
+https://github.com/sveltejs/prettier-plugin-svelte
+
 ## Recommended plugins order
 
 Place this in your .prettierrc file:
@@ -105,6 +115,7 @@ twPluginsOrder: 'container,position,zIndex,inset,display,flex,flexDirection,flex
 
 - [x] Add support for configuring plugin order
 - [x] Add support for JSX, TSX
+- [x] Add support for Svelte
 
 ## Contributing
 
