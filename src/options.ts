@@ -2,6 +2,12 @@ import { options as svelteOptions } from 'svelte-prettier-plugin'
 
 export default {
 	...svelteOptions,
+	twConfig: {
+		type: 'string',
+		category: 'Global',
+		default: './tailwind.config.js',
+		description: 'Path to tailwind config relative to the root of the project.',
+	},
 	twPluginsOrder: {
 		type: 'string',
 		category: 'Global',

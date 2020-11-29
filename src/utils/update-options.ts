@@ -1,4 +1,5 @@
 import type TWClassesSorter from 'tailwind-classes-sorter'
+import path from 'path'
 
 export default function updateOptions(
 	twClassesSorter: TWClassesSorter,
@@ -12,6 +13,9 @@ export default function updateOptions(
 		options.twClassesPosition || 'components-first'
 	twClassesSorter.unknownClassesPosition =
 		options.twUnknownClassesPosition || 'start'
+	twClassesSorter.setConfig(
+		path.join(__dirname, '../../../..', options.twConfig)
+	)
 	twClassesSorter.setPluginOrder(defaultOrder => {
 		const customOrder = options.twPluginsOrder.split(',')
 		return [
