@@ -48,6 +48,16 @@ Note: Prettier 2.0.0 or greater is required as a peer dependency.
 
 These options can be added to your `.prettierrc` file.
 
+**twConfig**
+
+Path to tailwind config relative to the root of the project.
+
+```ts
+twConfig: string
+```
+
+_Default: `"./tailwind.config.js"`_
+
 **twPluginsOrder**
 
 Comma separated order of tailwind plugins to sort classes by.
