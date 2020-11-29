@@ -42,6 +42,8 @@ yarn add --dev prettier prettier-plugin-tailwind
 
 _\*supports other IDE's\*_
 
+Note: Prettier 2.0.0 or greater is required as a peer dependency.
+
 ## Options
 
 These options can be added to your `.prettierrc` file.
