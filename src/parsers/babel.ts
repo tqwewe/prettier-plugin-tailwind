@@ -17,7 +17,7 @@ export default (twClassesSorter: TWClassesSorter) => ({
 		const attributeNames: string[] =
 			typeof options !== 'undefined'
 				? options.twJsxClassAttributes.split(',')
-				: ['className', 'tw']
+				: ['class', 'className', 'tw']
 
 		const result = loopNodes(ast, node => {
 			if (

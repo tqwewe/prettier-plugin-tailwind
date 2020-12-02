@@ -105,7 +105,7 @@ Comma separated list of JSX attributes to sort tailwind classes in.
 twJsxClassAttributes: string
 ```
 
-_Default: `"className,tw"`_
+_Default: `"class,className,tw"`_
 
 ## Svelte Setup
 
