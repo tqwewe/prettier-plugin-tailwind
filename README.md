@@ -52,7 +52,7 @@ Note: Prettier 2.0.0 or greater is required as a peer dependency.
 
 ## Prettier Options
 
-These options can be set in your .prettierrc file to change the behavious of this plugin.
+These options can be set in your `.prettierrc` file to change the behavious of this plugin.
 
 - [**`twConfig`**](OPTIONS.md#twconfig) - Path to tailwind config relative to the root of the project.
 - [**`twPluginsOrder`**](OPTIONS.md#twpluginsorder) - Comma separated order of tailwind plugins to sort classes by.

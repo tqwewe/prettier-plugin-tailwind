@@ -1,6 +1,6 @@
 # Prettier Options
 
-These options can be set in your .prettierrc file to change the behavious of this plugin.
+These options can be set in your `.prettierrc` file to change the behavious of this plugin.
 
 - [**`twConfig`**](#twconfig) - Path to tailwind config relative to the root of the project.
 - [**`twPluginsOrder`**](#twpluginsorder) - Comma separated order of tailwind plugins to sort classes by.
