@@ -36,4 +36,9 @@ export default {
 		description:
 			'Comma separated list of JSX attributes to sort tailwind classes in.',
 	},
+	twSortFunctions: {
+		type: 'string',
+		category: 'Global',
+		default: 'clsx,classNames,cx',
+	},
 }
