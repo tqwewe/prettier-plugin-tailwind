@@ -32,7 +32,7 @@ export default {
 	twJsxClassAttributes: {
 		type: 'string',
 		category: 'Global',
-		default: 'className,tw',
+		default: 'class,className,tw',
 		description:
 			'Comma separated list of JSX attributes to sort tailwind classes in.',
 	},
