@@ -1,8 +1,16 @@
 [![npm version](https://badge.fury.io/js/prettier-plugin-tailwind.svg)](https://badge.fury.io/js/prettier-plugin-tailwind)
 
-# Prettier Plugin Tailwind
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Acidic9/prettier-plugin-tailwind/banner.jpg">
+</p>
 
-Sort tailwind classes with Prettier.
+<h1 align="center">Prettier Plugin Tailwind</h1>
+
+<div align="center">
+	Sort tailwind classes with Prettier.
+</div>
+
+<br>
 
 Supports
 
