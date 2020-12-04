@@ -2,12 +2,12 @@
 
 These options can be set in your .prettierrc file to change the behavious of this plugin.
 
-- **`twConfig`** - Path to tailwind config relative to the root of the project.
-- **`twPluginsOrder`** - Comma separated order of tailwind plugins to sort classes by.
-- **`twClassesPosition`** - Position of component and utility classes.
-- **`twUnknownClassesPosition`** - Position of unknown classes.
-- **`twJsxClassAttributes`** - Comma separated list of JSX attributes to sort tailwind classes in.
-- **`twSortFunctions`** - Comma separated list of function names to sort classes in arguments.
+- [**`twConfig`**](#twconfig) - Path to tailwind config relative to the root of the project.
+- [**`twPluginsOrder`**](#twpluginsorder) - Comma separated order of tailwind plugins to sort classes by.
+- [**`twClassesPosition`**](#twclassesposition) - Position of component and utility classes.
+- [**`twUnknownClassesPosition`**](#twunknownclassesposition) - Position of unknown classes.
+- [**`twJsxClassAttributes`**](#twjsxclassattributes) - Comma separated list of JSX attributes to sort tailwind classes in.
+- [**`twSortFunctions`**](#twsortfunctions) - Comma separated list of function names to sort classes in arguments.
 
 ### twConfig
 
