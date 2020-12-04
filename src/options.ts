@@ -40,5 +40,7 @@ export default {
 		type: 'string',
 		category: 'Global',
 		default: 'clsx,classNames,cx',
+		description:
+			'Comma separated list of function names to sort classes in arguments.',
 	},
 }
