@@ -1,7 +1,7 @@
 [![npm version](https://badge.fury.io/js/prettier-plugin-tailwind.svg)](https://badge.fury.io/js/prettier-plugin-tailwind)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Acidic9/prettier-plugin-tailwind/master/banner.jpg">
+  <img src="https://raw.githubusercontent.com/Acidic9/prettier-plugin-tailwind/master/banner.png">
 </p>
 
 <h1 align="center">Prettier Plugin Tailwind</h1>
