@@ -13,9 +13,13 @@ export default function updateOptions(
 		options.twClassesPosition || 'components-first'
 	twClassesSorter.unknownClassesPosition =
 		options.twUnknownClassesPosition || 'start'
-	twClassesSorter.setConfig(
-		path.join(__dirname, '../../../..', options.twConfig)
-	)
+	if (options.twConfig) {
+		twClassesSorter.setConfig(
+			path.join(__dirname, '../../../..', options.twConfig)
+		)
+	} else {
+		twClassesSorter.setConfig()
+	}
 	twClassesSorter.setPluginOrder(defaultOrder => {
 		const customOrder = options.twPluginsOrder.split(',')
 		return [

@@ -11,13 +11,13 @@ These options can be set in your `.prettierrc` file to change the behavious of t
 
 ### twConfig
 
-Path to tailwind config relative to the root of the project.
+Path to tailwind config relative to the root of the project; "" will attempt to find a tailwind.config.js file recursively.
 
 ```ts
 twConfig: string
 ```
 
-_Default: `"./tailwind.config.js"`_
+_Default: `""`_
 
 ### twPluginsOrder
 

@@ -5,8 +5,9 @@ export default {
 	twConfig: {
 		type: 'string',
 		category: 'Global',
-		default: './tailwind.config.js',
-		description: 'Path to tailwind config relative to the root of the project.',
+		default: '',
+		description:
+			'Path to tailwind config relative to the root of the project; "" will attempt to find a tailwind.config.js file recursively.',
 	},
 	twPluginsOrder: {
 		type: 'string',
