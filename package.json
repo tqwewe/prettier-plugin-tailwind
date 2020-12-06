@@ -23,7 +23,6 @@
 	},
 	"dependencies": {
 		"prettier": "^2.1.2",
-		"svelte-prettier-plugin": "npm:prettier-plugin-svelte",
 		"tailwind-classes-sorter": "^0.2.5",
 		"tailwindcss": "^1.8.13"
 	},

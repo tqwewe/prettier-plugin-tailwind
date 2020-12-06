@@ -27,7 +27,7 @@ export default (twClassesSorter: TWClassesSorter) => ({
 
 		const result = loopNodes(ast, node => {
 			jsxAttributes(twClassesSorter, node, attributeNames)
-			// twin(twClassesSorter, node)
+			twin(twClassesSorter, node)
 			functionCalls(twClassesSorter, node, functionNames)
 			functionTemplates(twClassesSorter, node, functionNames)
 
