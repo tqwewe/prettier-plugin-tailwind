@@ -18,7 +18,6 @@ Supports
 - CSS (@apply directive)
 - JSX, TSX
 - [twin.marco](https://github.com/ben-rogerson/twin.macro)
-- Svelte
 
 **Go from this:**
 
@@ -62,14 +61,6 @@ These options can be set in your `.prettierrc` file to change the behavious of t
 - [**`twSortFunctions`**](OPTIONS.md#twsortfunctions) - Comma separated list of function names to sort classes in arguments.
 
 More details can be found in [OPTIONS.md](OPTIONS.md)
-
-## Svelte Setup
-
-To use this plugin with Svelte, you should **not** use the prettier-plugin-svelte plugin as it is imported by this plugin already.
-
-Credit goes to the svelte prettier plugin for helping with support for Svelte.
-
-https://github.com/sveltejs/prettier-plugin-svelte
 
 ## Contributing 🙌
 
