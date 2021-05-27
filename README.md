@@ -18,7 +18,7 @@ Supports
 - CSS (@apply directive)
 - ReactJS (JSX, TSX)
 - VueJS
-- [twin.marco](https://github.com/ben-rogerson/twin.macro)
+- [twin.macro](https://github.com/ben-rogerson/twin.macro)
 
 **Go from this:**
 
