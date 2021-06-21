@@ -1,6 +1,6 @@
 {
 	"name": "prettier-plugin-tailwind",
-	"version": "2.2.10",
+	"version": "2.2.11",
 	"description": "Sort tailwind classes",
 	"author": "Ari Seyhun <ariseyhun@live.com.au>",
 	"homepage": "https://github.com/Acidic9/prettier-plugin-tailwind#readme",
