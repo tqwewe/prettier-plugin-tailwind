@@ -16,7 +16,7 @@ export default (twClassesSorter: TWClassesSorter) => ({
 			options
 		)
 
-		if (!twClassesSorter) {
+		if (!twClassesSorter || typeof options === 'undefined') {
 			return ast
 		}
 
