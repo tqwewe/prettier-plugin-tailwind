@@ -23,7 +23,7 @@ Supports
 **Go from this:**
 
 ```html
-<div class="z-50 z-10 container  text-left md:text-center justify-center">
+<div class="z-50 container  text-left md:text-center justify-center">
 	...
 </div>
 ```
@@ -31,7 +31,7 @@ Supports
 **To this:**
 
 ```html
-<div class="container justify-center text-left z-10 z-50 md:text-center">
+<div class="container justify-center text-left z-50 md:text-center">
 	...
 </div>
 ```
