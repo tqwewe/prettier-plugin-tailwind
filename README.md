@@ -1,4 +1,4 @@
-| WARNING: this package is no longer maintained. |
+| ⚠️ WARNING: this package is no longer maintained. ⚠️ |
 | --- |
 | Please use the official [`prettier-plugin-tailwindcss`](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) package instead. |
 
