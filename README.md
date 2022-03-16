@@ -1,3 +1,11 @@
+| WARNING: this package is no longer maintained. |
+| --- |
+| Please use the official [`prettier-plugin-tailwindcss`](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) package instead. |
+
+It was a pleasure developing this package and I hope it served you all well (:
+
+---
+
 [![npm version](https://badge.fury.io/js/prettier-plugin-tailwind.svg)](https://badge.fury.io/js/prettier-plugin-tailwind)
 
 <p align="center">
